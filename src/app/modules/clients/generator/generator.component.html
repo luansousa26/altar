@@ -1,0 +1,28 @@
+<div class="generator">
+    <div class="generator-container">
+        <div class="generator-header">
+            <div>
+                <small>{{label}}</small>
+                <input [(ngModel)]="service.optionalField" [placeholder]="label" [disabled]="service.disableField"
+                    mask="S">
+            </div>
+            <div class="time">
+                {{service.time | date:'mediumTime'}}
+            </div>
+            <div>
+                <button [disabled]="service.started" (click)="service.start()">Generate 2D Grid</button>
+            </div>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div>
+            <li *ngFor="let line of service.gridList; let i = index" class="line-list">
+                <div *ngIf="i > 0">{{i - 1}}</div>
+                <div *ngFor="let value of line">{{value}}</div>
+            </li>
+        </div>
+    </div>
+    <div class="your-code">
+        <app-your-code></app-your-code>
+    </div>
+</div>
