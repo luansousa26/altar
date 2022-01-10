@@ -1,0 +1,14 @@
+<div class="grid-container">
+    <div class="table">
+        <div class="table-columns">
+            <li *ngFor="let column of service.paymentsTable.columns" [ngStyle]="{'width': column.width}">
+                {{column.label}}
+            </li>
+        </div>
+        <div class="table-lines" *ngFor="let item of service.paymentsTable.rows">
+            <li *ngFor="let column of service.paymentsTable.columns" [ngStyle]="{'width': column.width}">
+                {{item[column.value]}}
+            </li>
+        </div>
+    </div>
+</div>

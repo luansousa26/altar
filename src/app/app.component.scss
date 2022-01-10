@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+    border-bottom: solid 1px #e7e7e7;
+}
+
+.menu-items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 50%;
+}
+.menu-items li {
+    list-style: none;
+    cursor: pointer;
+}
+.selected {
+    border-bottom: solid 3px #02a3d9;
+    font-weight: 600;
+}

@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+$grey-default: #899da5;
+input {
+    width: 70px;
+    padding: 5px;
+}
+small {
+    display: block;
+    text-transform: uppercase;
+    color: $grey-default;
+    font-size: 11px;
+}
+button {
+    background-color: $grey-default;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.grid-container {
+    display: flex;
+    justify-content: center;
+}

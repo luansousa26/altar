@@ -1,0 +1,52 @@
+$border: solid 1px #e3e3e3;
+$grey-default: #899da5;
+.line-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+.line-list div:first-child {
+    border-left: $border;
+}
+.line-list:last-child div{
+    border-bottom: $border;
+}
+.line-list div {
+    padding: 10px 15px 10px 15px;
+    border: $border;
+    border-left: none;
+    border-bottom: none;
+    min-width: 20px;
+    color: #686868;
+    font-weight: 600;
+}
+.generator-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.generator-header input {
+    width: 70px;
+    padding: 5px;
+}
+.generator-header small {
+    display: block;
+    text-transform: uppercase;
+    color: $grey-default;
+    font-size: 11px;
+}
+.grid-container, .generator-container{
+    display: flex;
+    justify-content: center;
+}
+.your-code {
+    @extend .grid-container;
+    margin-top: 30px;
+}
+.time {
+    font-weight: bold;
+    font-size: 24px;
+    color: $grey-default;
+}
+ .generator-header{
+    min-width: 41%;
+}
