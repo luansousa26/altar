@@ -1,0 +1,21 @@
+.code {
+    padding: 10px 20px 10px 20px;
+    border: solid 1px #a3a3a3;
+}
+.circle {
+    background: #ec5458;
+    border: solid 1px #a3a3a3;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: flex;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+.live-text {
+    display: flex;
+    justify-content: center;
+}
+.started {
+    background-color: #ad5;
+}
