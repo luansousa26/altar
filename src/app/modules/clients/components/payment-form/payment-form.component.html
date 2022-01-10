@@ -1,0 +1,13 @@
+<form class="form" [formGroup]="service.form">
+    <div>
+        <small>Payment</small>
+        <input placeholder="Payment" formControlName="payment">
+    </div>
+    <div>
+        <small>Ammount</small>
+        <input placeholder="Ammount" formControlName="ammount" mask="99999">
+    </div>
+    <div>
+        <button [disabled]="service.form.invalid" (click)="service.savePayment()">+ ADD</button>
+    </div>
+</form>
