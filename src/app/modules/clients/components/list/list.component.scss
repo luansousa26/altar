@@ -1,0 +1,29 @@
+$grey-default: #899da5;
+
+.row-wrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.grid-container{
+    width: 100%;
+}
+li {
+    @extend .row-wrap;
+    padding: 5px;
+}
+li:last-child {
+    border-right: none;
+}
+
+.table-lines, .table-columns {
+    @extend .row-wrap;
+    border-bottom: solid 1px $grey-default;
+}
+.table-columns li{
+    color: $grey-default;
+    font-weight: bold;
+}
+.table {
+    width: 80%;
+}
